@@ -1,0 +1,1 @@
+const skillLevelData = ["intern","junior","middle" ,"senior", "StartUp Founder", "CEO"]
