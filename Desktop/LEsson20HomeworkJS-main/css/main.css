@@ -1,0 +1,577 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+body {
+  background-color: red;
+}
+
+.container {
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.main-wrapper .iphone {
+  position: relative;
+  background-image: url(../images/walllpaper.jpg);
+  background-size: cover;
+  width: 320px;
+  height: 620px;
+  border: 15px solid black;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.main-wrapper .iphone .iphone-top {
+  display: flex;
+  justify-content: end;
+}
+.main-wrapper .iphone .iphone-top .dinamic-island {
+  cursor: pointer;
+  position: absolute;
+  z-index: 10005;
+  top: 7px;
+  left: 110px;
+  width: 100px;
+  height: 25px;
+  background-color: black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.main-wrapper .iphone .iphone-top .dinamic-island .dinamic-camera {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #000;
+  border: 3px solid #040125;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-wrapper .iphone .iphone-top .dinamic-island .dinamic-camera .dinamic-camera-dot1 {
+  margin-top: 2px;
+  width: 5px;
+  height: 5px;
+  background-color: #050233;
+  border-radius: 10px;
+}
+.main-wrapper .iphone .iphone-top .dinamic-island .dinamic-camera .dinamic-camera-dot2 {
+  width: 5px;
+  height: 5px;
+  background-color: #050233;
+  border-radius: 10px;
+}
+.main-wrapper .iphone .iphone-top .iphone-top-wrapper {
+  margin-right: 20px;
+  margin-top: 10px;
+  gap: 5px;
+  display: flex;
+}
+.main-wrapper .iphone .iphone-top .iphone-top-wrapper .ios-battery {
+  position: relative;
+}
+.main-wrapper .iphone .iphone-top .iphone-top-wrapper .ios-battery .i-b-show {
+  top: 10px !important;
+  height: 20px !important;
+  width: 35px !important;
+  background-color: black !important;
+  z-index: 10002 !important;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-wrapper .iphone .iphone-top .iphone-top-wrapper .ios-battery .ios-battery-show {
+  display: none;
+  position: absolute;
+  width: 200px;
+  background-color: #000;
+  border-radius: 20px;
+}
+.main-wrapper .iphone .iphone-top .iphone-top-wrapper .ios-battery .ios-battery-show p {
+  margin-left: 20px;
+  color: #fff;
+}
+.main-wrapper .iphone .iphone-top .iphone-top-wrapper .ios-battery .ios-battery-show p span {
+  color: lightgreen;
+}
+.main-wrapper .iphone .iphone-top .iphone-top-wrapper .ios-battery img {
+  cursor: pointer;
+}
+.main-wrapper .iphone .iphone-top .iphone-top-wrapper img {
+  width: 20px;
+  height: 20px;
+}
+.main-wrapper .iphone .iphone-middle {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+.main-wrapper .iphone .iphone-middle p {
+  font-family: "San Francisco";
+  margin: 0;
+  font-size: 80px;
+  color: #fff;
+}
+.main-wrapper .iphone .iphone-bottom {
+  display: flex;
+}
+.main-wrapper .iphone .iphone-bottom .iphone-torch-wrapper {
+  cursor: pointer;
+  padding: 10px 13px;
+  border-radius: 28px;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.main-wrapper .iphone .iphone-bottom .iphone-torch-wrapper img {
+  width: 30px;
+  height: 30px;
+}
+.main-wrapper .iphone .iphone-bottom .iphone-camera-wrapper {
+  padding: 10px 13px;
+  border-radius: 28px;
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.main-wrapper .iphone .iphone-bottom .iphone-camera-wrapper img {
+  width: 30px;
+  height: 30px;
+}
+.main-wrapper .iphone .iphone-home {
+  position: absolute;
+  bottom: 10px;
+  z-index: 10004;
+  left: 103px;
+  width: 120px;
+  height: 4px;
+  border-radius: 20px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.main-wrapper .iphone .iphone-menu {
+  position: absolute;
+}
+.main-wrapper .iphone .iphone-menu .iphone-apps {
+  display: flex;
+  flex-direction: column;
+}
+.main-wrapper .iphone .iphone-menu .iphone-apps span {
+  cursor: pointer;
+}
+.main-wrapper .iphone .iphone-menu .iphone-apps .apps-1 {
+  position: absolute;
+  top: 50px;
+  margin-left: 13px;
+  z-index: 10001;
+  width: 310px;
+  padding: 5px;
+  display: flex;
+  gap: 30px;
+}
+.main-wrapper .iphone .iphone-menu .iphone-apps .apps-1 div img {
+  width: 50px;
+  height: 50px;
+}
+.main-wrapper .iphone .iphone-menu .iphone-apps .apps-1 .apple-krill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: greenyellow;
+}
+.main-wrapper .iphone .iphone-menu .iphone-apps .apps-1 .apple-krill p {
+  margin: 0;
+}
+.main-wrapper .iphone .iphone-menu .iphone-apps .apps-1 .apple-alarm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+}
+.main-wrapper .iphone .iphone-menu .iphone-apps .apps-bottom {
+  position: absolute;
+  top: 535px;
+  width: 310px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-radius: 30px;
+}
+.main-wrapper .iphone .iphone-menu .iphone-apps .apps-bottom div img {
+  width: 50px;
+  height: 50px;
+}
+
+.iphone-torch {
+  box-shadow: 1px -100px 54px 43px rgb(255, 255, 255);
+}
+
+.lockscreen-none {
+  display: none;
+}
+
+.lockscreen-block {
+  display: block !important;
+}
+
+.iphone-password-wrapper {
+  position: absolute;
+  top: -500%;
+  left: 0px;
+  width: 320px;
+  height: 625px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.iphone-password-wrapper .iphone-password {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.iphone-password-wrapper .iphone-password form input {
+  width: 100px;
+  text-align: center;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  letter-spacing: 20px;
+  border-bottom: 2px solid #fff;
+}
+.iphone-password-wrapper .iphone-password .iphone-password-numbers {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.iphone-password-wrapper .iphone-password .iphone-password-numbers .iphone-password-numbers-1 {
+  display: flex;
+  gap: 25px;
+}
+.iphone-password-wrapper .iphone-password .iphone-password-numbers .iphone-password-numbers-1 p {
+  margin: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 28px;
+  font-size: 30px;
+  bottom: 30px;
+  left: 20px;
+  background-color: rgba(212, 182, 182, 0.2);
+}
+.iphone-password-wrapper .iphone-password .iphone-password-numbers .iphone-password-numbers-2 {
+  display: flex;
+  gap: 25px;
+}
+.iphone-password-wrapper .iphone-password .iphone-password-numbers .iphone-password-numbers-2 p {
+  margin: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 28px;
+  font-size: 30px;
+  bottom: 30px;
+  left: 20px;
+  background-color: rgba(212, 182, 182, 0.2);
+}
+.iphone-password-wrapper .iphone-password .iphone-password-numbers .iphone-password-numbers-3 {
+  display: flex;
+  gap: 25px;
+}
+.iphone-password-wrapper .iphone-password .iphone-password-numbers .iphone-password-numbers-3 p {
+  margin: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 28px;
+  font-size: 30px;
+  bottom: 30px;
+  left: 20px;
+  background-color: rgba(212, 182, 182, 0.2);
+}
+.iphone-password-wrapper .iphone-password .iphone-password-numbers .iphone-password-numbers-4 {
+  display: flex;
+  gap: 25px;
+}
+.iphone-password-wrapper .iphone-password .iphone-password-numbers .iphone-password-numbers-4 p {
+  margin: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 28px;
+  font-size: 30px;
+  bottom: 30px;
+  left: 20px;
+  background-color: rgba(212, 182, 182, 0.2);
+}
+
+.password-check-button {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 250px;
+  right: 140px;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.iphone-menu {
+  display: none;
+}
+
+.apps-timer-display-wrapper-main {
+  display: none;
+}
+.apps-timer-display-wrapper-main .apps-timer-display {
+  position: absolute;
+  top: -80%;
+  left: -13px;
+  width: 320px;
+  height: 625px;
+  border-radius: 40px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.apps-timer-display-wrapper-main .apps-timer-display .apps-timer-display-wrapper {
+  margin-top: 200px;
+  margin-left: 20px;
+  width: 200px;
+}
+.apps-timer-display-wrapper-main .apps-timer-display .apps-timer-display-wrapper input {
+  margin-top: 5px;
+  border: none;
+  border-bottom: 2px solid #000;
+}
+.apps-timer-display-wrapper-main .apps-timer-display div {
+  margin-top: 220px;
+}
+.apps-timer-display-wrapper-main .apps-timer-display .apps-timer-display-set {
+  position: absolute;
+  border: none;
+  top: 300px;
+  left: 30px;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: rgb(20, 26, 190);
+  border-radius: 30px;
+}
+.apps-timer-display-wrapper-main .apps-timer-display .apps-timer-display-start {
+  position: absolute;
+  border: none;
+  top: 300px;
+  right: 30px;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: green;
+  border-radius: 30px;
+}
+.apps-timer-display-wrapper-main .apps-timer-display .apps-timer-display-pause {
+  position: absolute;
+  border: none;
+  top: 350px;
+  right: 110px;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: gray;
+  border-radius: 30px;
+}
+.apps-timer-display-wrapper-main .apps-timer-display .apps-timer-display-leave {
+  position: absolute;
+  z-index: 1000003;
+  border: none;
+  top: 20px;
+  right: 0px;
+  width: 100px;
+  height: 30px;
+  color: black;
+  background-color: transparent;
+  border-radius: 30px;
+}
+.apps-timer-display-wrapper-main .apps-timer-display button {
+  cursor: pointer;
+}
+
+.apps-clock-main-wrapper {
+  display: none;
+}
+.apps-clock-main-wrapper .apps-clock-wrapper {
+  position: absolute;
+  top: -80%;
+  left: -13px;
+  width: 320px;
+  height: 625px;
+  border-radius: 40px;
+  background-color: #fff;
+}
+.apps-clock-main-wrapper .apps-clock-wrapper p {
+  margin-top: 200px;
+  margin-left: 80px;
+  font-size: 50px;
+}
+.apps-clock-main-wrapper .apps-clock-wrapper .apps-clock-wrapper-leave {
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  top: 20px;
+  right: 0px;
+  width: 100px;
+  height: 30px;
+  color: black;
+  background-color: transparent;
+  border-radius: 30px;
+}
+
+.apps-krill-main-wrapper {
+  display: none;
+}
+.apps-krill-main-wrapper .apps-krill-wrapper {
+  position: absolute;
+  top: -80%;
+  left: -13px;
+  width: 320px;
+  height: 625px;
+  border-radius: 40px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.apps-krill-main-wrapper .apps-krill-wrapper input {
+  margin-top: 150px;
+  width: 250px;
+  padding-top: 100px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+.apps-krill-main-wrapper .apps-krill-wrapper .apps-krill-wrapper-convert {
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  top: 290px;
+  left: 110px;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: rgb(20, 26, 190);
+  border-radius: 30px;
+}
+.apps-krill-main-wrapper .apps-krill-wrapper .apps-krill-wrapper-leave {
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  top: 20px;
+  right: 0px;
+  width: 100px;
+  height: 30px;
+  color: black;
+  background-color: transparent;
+  border-radius: 30px;
+}
+.apps-krill-main-wrapper .apps-krill-wrapper p {
+  margin-top: 100px;
+  text-align: left;
+}
+
+.apps-alarm-main-wrapper {
+  display: none;
+}
+.apps-alarm-main-wrapper .apps-alarm-wrapper {
+  position: absolute;
+  top: -80%;
+  left: -13px;
+  width: 320px;
+  height: 625px;
+  border-radius: 40px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.apps-alarm-main-wrapper .apps-alarm-wrapper input {
+  margin-top: 200px;
+  width: 200px;
+}
+.apps-alarm-main-wrapper .apps-alarm-wrapper .alarm-leave {
+  position: absolute;
+  border: none;
+  top: 20px;
+  right: 0px;
+  width: 100px;
+  height: 30px;
+  color: black;
+  background-color: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.apps-alarm-main-wrapper .apps-alarm-wrapper .alarm-set {
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  top: 250px;
+  right: 110px;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: green;
+  border-radius: 30px;
+}
+.apps-alarm-main-wrapper .apps-alarm-wrapper .alarm-pause {
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  top: 290px;
+  right: 110px;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: gray;
+  border-radius: 30px;
+}
+.apps-alarm-main-wrapper .apps-alarm-wrapper .alarm-audio {
+  position: absolute;
+  top: 330px;
+  right: 10px;
+}
+
+.displayy-none {
+  display: none !important;
+}
